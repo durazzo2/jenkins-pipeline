@@ -1,3 +1,2 @@
-FROM alpine:latest
-RUN apk add --no-cache curl
-CMD ["echo", "Hello from Docker!"]
+FROM nginx
+COPY index.html /usr/share/nginx/html/index.html
